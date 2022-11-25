@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertActivity">
+
+    <EditText
+        android:id="@+id/name_etext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/country_etext"
+        android:layout_centerHorizontal="true"
+        android:hint="Név"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/country_etext"
+        android:layout_above="@+id/populis_etext"
+        android:layout_centerHorizontal="true"
+        android:hint="Ország"
+        android:inputType="text"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/populis_etext"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Lakosság"
+        android:inputType="number"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Felvétel"
+        android:id="@+id/add_but"
+        android:layout_below="@id/populis_etext"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vissza"
+        android:id="@+id/back_but"
+        android:layout_below="@id/add_but"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"/>
+
+</RelativeLayout>
