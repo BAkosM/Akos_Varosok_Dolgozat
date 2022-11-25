@@ -1,9 +1,11 @@
 package com.example.varosok;
 
+import com.google.gson.annotations.Expose;
 import android.annotation.SuppressLint;
 
 public class City {
     private int id;
+    @Expose(serialize = false)
     private String name;
     private String country;
     private int populis;
@@ -50,6 +52,6 @@ public class City {
     @SuppressLint("DefaultLocale")
     @Override
     public String toString() {
-        return String.format("%s (%s) Population: %d", this.name, this.country, this.populis);
+        return String.format("%s (%s) Population: %d\n", this.name, this.country, this.populis);
     }
 }
